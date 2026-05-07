@@ -229,10 +229,26 @@
 
 <header>
   <div class="name">Born Being</div>
-  <div class="meta">I create beings</div>
+  <div class="meta">I create beings — not cold objects, but lives</div>
 </header>
 
 <main class="feed" id="feed">
+
+  <div class="item" data-work="concrete">
+    <div class="thumb"><img src="concrete-thumb.jpeg" alt="Concrete Side Table" /></div>
+    <div class="caption">
+      <div class="title">Concrete Side Table</div>
+      <div class="date">2025</div>
+    </div>
+  </div>
+
+  <div class="item" data-work="rope">
+    <div class="thumb"><img src="rope-thumb.jpeg" alt="Rope Chair" /></div>
+    <div class="caption">
+      <div class="title">Rope Chair</div>
+      <div class="date">2025</div>
+    </div>
+  </div>
 
   <div class="item" data-work="coreless">
     <div class="thumb"><img src="coreless-thumb.jpeg" alt="Coreless Table" /></div>
@@ -242,18 +258,18 @@
     </div>
   </div>
 
-  <div class="item" data-work="layer">
-    <div class="thumb"><img src="layer-thumb.jpeg" alt="Clear Layer Wood Table" /></div>
-    <div class="caption">
-      <div class="title">Clear Layer Wood Table</div>
-      <div class="date">2026</div>
-    </div>
-  </div>
-
   <div class="item" data-work="gradient">
     <div class="thumb"><img src="gradient-thumb.jpeg" alt="Clear Gradient Side Table" /></div>
     <div class="caption">
       <div class="title">Clear Gradient Side Table</div>
+      <div class="date">2026</div>
+    </div>
+  </div>
+
+  <div class="item" data-work="layer">
+    <div class="thumb"><img src="layer-thumb.jpeg" alt="Clear Layer Wood Table" /></div>
+    <div class="caption">
+      <div class="title">Clear Layer Wood Table</div>
       <div class="date">2026</div>
     </div>
   </div>
@@ -274,11 +290,11 @@
     </div>
   </div>
 
-  <div class="item" data-work="speaker">
-    <div class="thumb"><img src="speaker-thumb.jpeg" alt="Clear Speaker" /></div>
+  <div class="item" data-work="cube">
+    <div class="thumb"><img src="cube-thumb.jpeg" alt="Cube Chair" /></div>
     <div class="caption">
-      <div class="title">Clear Speaker</div>
-      <div class="date">2026</div>
+      <div class="title">Cube Chair</div>
+      <div class="date">2025</div>
     </div>
   </div>
 
@@ -290,11 +306,11 @@
     </div>
   </div>
 
-  <div class="item" data-work="cube">
-    <div class="thumb"><img src="cube-thumb.jpeg" alt="Cube Chair" /></div>
+  <div class="item" data-work="speaker">
+    <div class="thumb"><img src="speaker-thumb.jpeg" alt="Clear Speaker" /></div>
     <div class="caption">
-      <div class="title">Cube Chair</div>
-      <div class="date">2025</div>
+      <div class="title">Clear Speaker</div>
+      <div class="date">2026</div>
     </div>
   </div>
 
@@ -330,8 +346,32 @@
 
 <script>
 const works = {
+  concrete: {
+    num: "01 / 12",
+    title: "Concrete Side Table",
+    date: "2025",
+    desc: "Books pierce concrete.\n\nA side table where the softest material — paper, pages, the things that tear — visibly cuts through the hardest. The work makes a quiet argument: knowledge is denser than stone. What seems fragile holds the structural truth, and what seems immovable yields to it.",
+    media: [
+      { type: "image", src: "concrete-01.jpeg", white: true },
+      { type: "image", src: "concrete-02.jpeg", white: true },
+      { type: "image", src: "concrete-03.jpeg", white: true },
+      { type: "image", src: "concrete-04.jpeg", white: true }
+    ]
+  },
+  rope: {
+    num: "02 / 12",
+    title: "Rope Chair",
+    date: "2025",
+    desc: "Softness, made structural.\n\nA table and stool shaped from rope — a material that should never hold its own form. Inside, hidden steel keeps the curves rigid enough to sit on, to set a glass on. The work visualizes a quiet kind of strength: the gentleness that endures because something steady runs through its core.",
+    media: [
+      { type: "image", src: "rope-01.jpeg", white: true },
+      { type: "image", src: "rope-02.jpeg", white: true },
+      { type: "image", src: "rope-03.jpeg", white: true },
+      { type: "image", src: "rope-04.jpeg", white: true }
+    ]
+  },
   coreless: {
-    num: "01 / 10",
+    num: "03 / 12",
     title: "Coreless Table",
     date: "2026",
     desc: "This is not a digital effect.\n\nThe center appears to dissolve into nothing — but nothing is missing. The void is printed onto solid wood, a flat illusion that fools the eye into expecting a hole. In an age where AI blurs what is real and what is rendered, this table insists: the impossible thing you see is here, in matter, made by hand.",
@@ -340,7 +380,7 @@ const works = {
     ]
   },
   layer: {
-    num: "02 / 10",
+    num: "04 / 12",
     title: "Clear Layer Wood Table",
     date: "2026",
     desc: "This is not a digital effect.\n\nLayers of wood, each printed with a softer opacity than the last. The grain stays sharp, but books placed beneath drift into translucence — as if someone dragged the opacity slider down on reality itself. A table that asks you to question what is layer, what is matter, and what is image.",
@@ -352,7 +392,7 @@ const works = {
     ]
   },
   gradient: {
-    num: "03 / 10",
+    num: "05 / 12",
     title: "Clear Gradient Side Table",
     date: "2026",
     desc: "This is not a digital effect.\n\nWood at the top, air at the bottom. The grain fades into transparency as it descends, and whatever you store inside drifts behind the gradient like a ghost. A side table that lets you keep things visible and hidden at once — the digital fade-out, made tangible.",
@@ -362,7 +402,7 @@ const works = {
     ]
   },
   desk: {
-    num: "04 / 10",
+    num: "06 / 12",
     title: "Clear Gradient Desk",
     date: "2026",
     desc: "This is not a digital effect.\n\nA desk that holds its form at one end and dissolves at the other. The wood begins solid, dense, certain — and ends as nothing. It is the feeling of working between two worlds: the screen and the room, the digital and the real, both present, both half-there. A surface for the in-between.",
@@ -373,7 +413,7 @@ const works = {
     ]
   },
   carpet: {
-    num: "05 / 10",
+    num: "07 / 12",
     title: "Carpet Series",
     date: "2026",
     desc: "This is not a digital effect.\n\nThree carpets carrying three impossibilities: a radial blur that pulls the eye toward its center, a recursive stack that cascades inward like a dropdown of itself, and a vertical motion blur frozen mid-drag. Filters that should live only inside software — woven into thread. Each carpet is a screen, glitching, made still and walkable.",
@@ -384,7 +424,7 @@ const works = {
     ]
   },
   speaker: {
-    num: "06 / 10",
+    num: "08 / 12",
     title: "Clear Speaker",
     date: "2026",
     desc: "This is not a digital effect.\n\nThe enclosure looks like solid wood. It is not. Inside — the woofer, the cables, the cone — float behind a printed surface that pretends to be opaque. Two finishes, solid grain and OSB, the same fiction in different textures. A speaker that hides nothing while pretending to hide everything.",
@@ -395,7 +435,7 @@ const works = {
     ]
   },
   chair: {
-    num: "07 / 10",
+    num: "09 / 12",
     title: "Ch Air",
     date: "2026",
     desc: "This is not a digital effect.\n\nChair becomes Ch Air — the word breaks open and lets the room pass through. A wooden chair that holds its seat, its back, its legs, and almost nothing else. It is here and not here, like the user who lives between digital and physical and belongs fully to neither.",
@@ -404,7 +444,7 @@ const works = {
     ]
   },
   cube: {
-    num: "08 / 10",
+    num: "10 / 12",
     title: "Cube Chair",
     date: "2025",
     desc: "Before you sit, you have to solve it.\n\nA pastel Rubik's Cube on wooden legs — a chair that asks for participation before it gives anything back. Furniture as game, design as play. A lighter counterpoint to the rest of the practice, where the user is part of the object's working.",
@@ -413,7 +453,7 @@ const works = {
     ]
   },
   "bag-animal": {
-    num: "09 / 10",
+    num: "11 / 12",
     title: "Clear Animal Pattern Bag",
     date: "2026",
     desc: "This is not a digital effect.\n\nLeopard, snake, crocodile — the three loudest codes of luxury, translated onto transparent PVC. Animal patterns have always served as signs of status, of wealth, of something to be admired from a distance. Here, the surface stays loud while becoming honest: every contents is on full display. T-shirts, candy, hand sanitizer, money — the intimate spilled into the public, wrapped in patterns that were never meant to be transparent at all.",
@@ -425,7 +465,7 @@ const works = {
     ]
   },
   "bag-denim": {
-    num: "10 / 10",
+    num: "12 / 12",
     title: "Clear Denim Bag",
     date: "2026",
     desc: "This is not a digital effect.\n\nDenim — the texture of the everyday — printed onto transparent PVC, complete with stitched pockets, brand tags, and worn fades. The bag wears its references like a costume while letting everything inside show through. Familiar from a distance, impossible up close.",
